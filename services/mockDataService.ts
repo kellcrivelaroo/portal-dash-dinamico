@@ -4,6 +4,7 @@ import { APIResponse } from '../types';
 const API_BASE_URL = 'https://bpm-homol.join4.com.br/app-ext/consultadadosprocesso/api/v1/getdados';
 // const CORS_PROXY = 'https://corsproxy.io/?';
 
+
 type ModuleType = 'reembolso' | 'fornecedor' | 'nf' | 'viagem';
 
 /**
