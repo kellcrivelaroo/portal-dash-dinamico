@@ -1,0 +1,5 @@
+{
+  "name": "Portal Dash Dinâmico",
+  "description": "A dynamic BPM visualization dashboard with AI-powered insights using Gemini, adapting to various process data structures.",
+  "requestFramePermissions": []
+}
