@@ -3,6 +3,7 @@ import { APIResponse } from '../types';
 // const API_BASE_URL = 'https://maria-n8n.62ejry.easypanel.host/webhook/getDadosDash';
 const API_BASE_URL = 'https://bpm-homol.join4.com.br/app-ext/consultadadosprocesso/api/v1/getdados';
 // const CORS_PROXY = 'https://corsproxy.io/?';
+// const API_BASE_URL = 'https://bpm-homol.join4.com.br/app-ext/consultasportaljoin4/api/v1/services/dashboardData';
 
 
 type ModuleType = 'reembolso' | 'fornecedor' | 'nf' | 'viagem';
@@ -25,18 +26,22 @@ const bodyConfigMap: Record<
     { nomeTabela: string; grids?: string }
 > = {
     reembolso: {
-        nomeTabela: 'f_reemb_desp',
+        // nomeTabela: 'f_reemb_desp',
+        nomeTabela: 'f_xpto_reg_desp',
         grids: 'GDESPESA'
     },
     viagem: {
-        nomeTabela: 'f_c_sol_viagens',
+        // nomeTabela: 'f_c_sol_viagens',
+        nomeTabela: 'f_xpto_sol_viag',
         grids: 'GRID_DESPESA'
     },
     nf: {
-        nomeTabela: 'f_p_rec_notafis'
+        // nomeTabela: 'f_p_rec_notafis'
+        nomeTabela: 'f_xpto_nota_fis'
     },
     fornecedor: {
-        nomeTabela: 'f_c_cadastros_f'
+        // nomeTabela: 'f_c_cadastros_f'
+        nomeTabela: 'f_xpto_cad_forn'
     }
 };
 
